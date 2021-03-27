@@ -1,0 +1,23 @@
+<section>
+    <div class="example-button-row">
+    <button mat-raised-button (click)="validarNuevafecha()" >Fecha 1</button>
+    <button mat-raised-button  (click)="citas()" >Fechas 2</button>
+    <button mat-raised-button color="primary" (click)="isValidar=true">Mostrar</button>
+    <!-- <button mat-raised-button color="accent" (click)="validarcitas()">Accent</button> -->
+    <button mat-raised-button color="warn" (click)="isValidar=false">Ocultar</button>
+    
+  </div>
+</section>
+
+<div *ngIf="isValidar" class="calendar-wrapper">
+  <button mat-button (click)="prevDay()">Prev</button>
+  <button mat-button (click)="today()">Today</button>
+  <button mat-button (click)="nextDay()">Next</button>
+  <mat-calendar #calendar 
+      [dateClass]="dateClass()" 
+     (monthSelected)="monthSelected($event)" 
+    [(selected)]="selectedDate"
+    (selectedChange)="dateChanged()">
+  </mat-calendar>
+</div>
+

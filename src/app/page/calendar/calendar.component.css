@@ -1,0 +1,50 @@
+.calendar-wrapper{
+    width: 300px;
+    text-align: center;
+}
+
+::ng-deep .Dia-Seleccionada .mat-calendar-body-cell-content {
+    background: rGB(73, 209, 109) !important;
+    color: #ccc;
+    border-radius: 100%;
+}
+
+ ::ng-deep .Dia-Seleccionada .mat-calendar-body-cell-content{
+     color:#fff !important;
+ }
+ ::ng-deep .Dia-Seleccionada .mat-calendar-body-selected{
+    background-color:#004f91 !important;
+    color: #fff !important;
+ }
+
+ ection {
+    display: table;
+  }
+  
+  .example-label {
+    display: table-cell;
+    font-size: 14px;
+    margin-left: 8px;
+    min-width: 120px;
+  }
+  
+  .example-button-row {
+    display: table-cell;
+    width: 490px;
+  }
+  
+  .example-button-row .mat-button-base {
+    margin: 8px 8px 8px 0;
+  }
+  
+  .example-flex-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .example-button-container {
+    display: flex;
+    justify-content: center;
+    width: 120px;
+  }
